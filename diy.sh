@@ -6,8 +6,11 @@
 # Blog: https://p3terx.com
 #=================================================
 
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/adguardhome
-git https://github.com/Lienol/openwrt-package/tree/master/lienol/luci-app-passwall package/passwall
+#添加adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+#添加lienol包
+git clone https://github.com/Lienol/openwrt-package package/lienol/
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
